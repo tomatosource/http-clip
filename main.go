@@ -21,5 +21,5 @@ func main() {
 	}
 	http.HandleFunc("/copy", handleCopy)
 	http.HandleFunc("/paste", handlePaste)
-	http.ListenAndServe(":8833", nil)
+	http.ListenAndServe("localhost:8833", nil)
 }
